@@ -17,14 +17,10 @@ for (let j = 0; j<16; j++) {
     row.appendChild(lineBreak);
 }
 
-// hover effect
+// click event to change color of square
 const squares = document.querySelectorAll('.square');
 squares.forEach(square => {
-    square.addEventListener('mouseover', function(event) {
+    square.addEventListener('mousedown', function(event) {
         square.setAttribute('style', 'background-color: black;');
     });
-
-    square.addEventListener('mouseout', function(event) {
-        square.setAttribute('style', 'background-color: white;');
-    })
-})
+});
