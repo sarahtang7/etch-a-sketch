@@ -16,3 +16,15 @@ for (let j = 0; j<16; j++) {
     lineBreak.classList.add('lineBreak');
     row.appendChild(lineBreak);
 }
+
+// hover effect
+const squares = document.querySelectorAll('.square');
+squares.forEach(square => {
+    square.addEventListener('mouseover', function(event) {
+        square.setAttribute('style', 'background-color: black;');
+    });
+
+    square.addEventListener('mouseout', function(event) {
+        square.setAttribute('style', 'background-color: white;');
+    })
+})
