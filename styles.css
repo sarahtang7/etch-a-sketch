@@ -1,4 +1,28 @@
+body {
+    background-color: lightgrey;
+    align-content: center;
+}
+
 #title {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 120px;
+}
+
+#grid-container {
+    display: inline-block;
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.row {
+    display: flex;
+    float: none;
+}
+
+.square {
+    display: inline-block;
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
 }
